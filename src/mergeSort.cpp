@@ -1,11 +1,12 @@
 // C++ program for Merge Sort
 #include <iostream>
+#include "mergeSort.h"
 using namespace std;
 
 // Merges two subarrays of array[].
 // First subarray is arr[begin..mid]
 // Second subarray is arr[mid+1..end]
-void merge(int array[], int const left, int const mid, int const right)
+void Merge::merge(int array[], int const left, int const mid, int const right)
 {
     auto const subArrayOne = mid - left + 1;
     auto const subArrayTwo = right - mid;
@@ -60,7 +61,7 @@ void merge(int array[], int const left, int const mid, int const right)
 // begin is for left index and end is
 // right index of the sub-array
 // of arr to be sorted */
-void mergeSort(int array[], int const begin, int const end)
+void Merge::mergeSort(int array[], int const begin, int const end)
 {
     if (begin >= end)
         return; // Returns recursively
@@ -73,14 +74,14 @@ void mergeSort(int array[], int const begin, int const end)
 
 // UTILITY FUNCTIONS
 // Function to print an array
-void printArray(int A[], int size)
+void Merge::printArray(int A[], int size)
 {
     for (auto i = 0; i < size; i++)
         cout << A[i] << " ";
 }
 
 // Driver code
-int main()
+int Merge::mergeMain()
 {
     int arr[] = {12, 11, 13, 5, 6, 7};
     auto arr_size = sizeof(arr) / sizeof(arr[0]);

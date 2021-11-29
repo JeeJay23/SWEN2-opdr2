@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 // #include "sortBubble.h"
-// #include "sortMerge.h"
+#include "mergeSort.h"
 // #include "sortHeap.h"
 
 std::string menu = "Choose algo: \nBubble : 1 \nMerge : 2 \nHeap : 3 \n ";
 
 int main()
 {
+    Merge merge;
     int input;
 
     std::cout << menu << std::endl;
@@ -19,7 +20,7 @@ int main()
         //sortBubble();
         break;
     case 2:
-        //sortMerge();
+        merge.mergeMain();
         break;
     case 3:
         //sortHeap();
