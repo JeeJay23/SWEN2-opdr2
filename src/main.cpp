@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-// #include "sortBubble.h"
+#include "bubblesort.h"
 // #include "sortMerge.h"
 // #include "sortHeap.h"
 
@@ -16,7 +16,8 @@ int main()
     switch (input)
     {
     case 1:
-        //sortBubble();
+        bubblesort bubble;
+        bubble.sort();
         break;
     case 2:
         //sortMerge();
